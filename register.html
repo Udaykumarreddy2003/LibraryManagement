@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a29229ad10.js" crossorigin="anonymous"></script>
+        <script src="particles.js"></script>
+        
+    </head> 
+    <body>
+        <div id="particles-js"></div>
+        <div class="container">
+            <nav>
+                <h1>LIBRARYZONE</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="register.html">Registar</a></li>
+                <li><a href="signin.html">Login</a></li>
+            </ul>
+    
+            </nav>
+            
+        </div>
+        <div class="containers">
+            
+            <div class="content">
+               
+                    <h1 class="form-title">Register Here</h1>
+                    <form>
+                       <input type="text" placeholder="NAME">
+                    <div class="beside">
+                        <input type="number" placeholder="PHONE NUMBER">
+                        <select>
+                            <option>GENDER</option>
+                            <option>MALE</option>
+                            <option>FEMALE</option>
+                            <option>NON-BINARY</option>
+                        </select>
+                    </div>
+                        <input type="email" placeholder="EMAIL ADDRESS">
+                        <input type="number" placeholder="CODE"><br>
+                        <button type="button" style="border-radius: 10px;">Submit</button>
+                    </form>
+            </div>
+        </div>
+        
+    </body>    
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                color:'##00ff00',
+                interactivity: {
+    detect_on: "canvas",
+    events: {
+    onhover: {
+    enable: true,
+    mode: "repulse"
+    }
+    }
+    },
+    number: {
+    value: 100,
+    density: {
+    enable: true,
+    value_area: 800
+    }
+    },
+    color: {
+    value: "#00ff00"
+    },
+    size: {
+    value: 4, // Initial particle size
+    anim: {
+    enable: true,
+    speed: 2, // Adjust this value for the speed of size change
+    size_min: 0.1, // Minimum particle size
+    sync: false
+    }
+    },
+    move: {
+    enable: true,
+    speed: 6, // Adjust the speed of particle movement
+    out_mode: "bounce"// Adjust the distance particles move away from the cursor // Adjust this value to control the speed
+    },
+    interactivity: {
+    detectsOn: "canvas",
+    events: {
+    onhover: {
+    enable: true,
+    mode: "repulse"
+    }
+    }
+    },
+    // Other configuration options
+    shape: {
+    color: '#00ff00',
+    type: 'circle',
+    
+    polygon: {
+    nb_sides: 10
+    }
+    },
+    
+    opacity: {
+    value: 1,
+    random: false,
+    anim: {
+    enable: false,
+    speed: 500,
+    opacity_min: 1000,
+    sync: false
+    }
+    },
+    },
+        });
+      </script>    
